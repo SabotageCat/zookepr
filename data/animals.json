@@ -101,7 +101,23 @@
       ]
     },
     {
+      "name": "Sabotage",
+      "species": "Felis Catus",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "loving",
+        "goofy"
+      ],
       "id": "10"
+    },
+    {
+      "name": "Dibble",
+      "species": "Felis Catus",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "11"
     }
   ]
 }

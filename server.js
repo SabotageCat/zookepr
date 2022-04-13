@@ -12,6 +12,9 @@ app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data
 app.use(express.json());
 
+// makes resources in 'public' directory static so that our front end can use them
+app.use(express.static('public'));
+
 // filter by multiple selections or one, returns an array for multiple
 function filterByQuery(query, animalsArray) {
 
@@ -113,6 +116,26 @@ app.get('/api/animals/:id', (req, res) => {
         res.sendStatus(404);
     }
 
+});
+
+// get request route to html homepage
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
+// get request route to animals.html
+app.get('/animals', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/animals.html'));
+});
+
+// get request route to zookeepers.html
+app.get('/zookeepers', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/zookeepers.html'));
+});
+
+// Wildcard route
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
 // creates id for new data entry, returns animal.json
