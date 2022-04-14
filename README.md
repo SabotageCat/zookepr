@@ -4,6 +4,8 @@
   ## Description
 
   This project was constructed in order to learn and practice express.js and networking functionality of apps. What this app does is maintain data for the animals and zookeepers of a zoo. The user is able to add animals and zookeepers throught the web page.
+  
+  ![image](https://user-images.githubusercontent.com/95665563/163456129-0a4a0e38-653b-435f-aeee-f750750638dc.png)
 
   ## Table of Contents
   1. [Installation](#installation)
